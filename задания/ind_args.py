@@ -14,7 +14,7 @@ def sum_after_positive(*args):
         for i in args:
             if i > 0:
                 pos = i
-        for i in args[pos+1:]:
+        for i in args[pos+2:]:
            summ += i
         return summ
     else:
@@ -22,4 +22,4 @@ def sum_after_positive(*args):
 
 
 if __name__ == '__main__':
-    print(sum_after_positive(-1, -45, -34, -567, 4, -47, 0, 7, 8, 5, -1))
+    print(sum_after_positive(-1, -45, -34, -567, -4, -47, 1, 7, 8, 5, -1))
